@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Try - Catch</h1>
+
+  <script src='sum.js'></script>
+
+  <script>
+    // console.log(sum(3, 5))
+    // alert(sum(3, 8))
+    // document.write(sum(4, 2))
+    let soma = ""
+    try {
+      let soma = sum(3, "a")
+    } catch (error) {
+      alert("Ocorreu um erro")
+      console.log(error.message)
+    }
+    // let soma = sum(3, "a")
+    console.log(soma)
+  </script>
+</body>
+</html>
